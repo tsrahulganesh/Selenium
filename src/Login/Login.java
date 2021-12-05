@@ -1,4 +1,4 @@
-package Seleniumbasic;
+package Login;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import okhttp3.Address;
