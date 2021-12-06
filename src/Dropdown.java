@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class Dropdown {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.get("file:///C:/Users/Rahul%20Gany/Desktop/amol.html");
@@ -19,12 +19,10 @@ public class Dropdown {
        password.sendKeys("password");
         WebElement drpsel = driver.findElement(By.id("seltext"));
         Select sel = new Select(drpsel);
-        //Thread.Sleep(3000);
         //sel.selectByValue("v12");
-        sel.selectByIndex(3);
-        //sel.deselectByVisibleText(" text 1");
-        //WebElement drpsel2 = driver.findElement(By.id("multiSel"));
         //sel.selectByIndex(3);
+        sel.selectByVisibleText("text 3");
+
 
 
     }
