@@ -1,4 +1,4 @@
-package Login;
+package Locators;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import okhttp3.Address;
