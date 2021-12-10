@@ -1,3 +1,5 @@
+package Junit;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.lang3.builder.ToStringExclude;
 import org.openqa.selenium.By;

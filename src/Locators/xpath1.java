@@ -32,7 +32,7 @@ public class xpath1 {
         address.sendKeys("Gany09");
         WebElement contact2 =  driver.findElement(By.xpath("//*[@id=\"sellingrate\"]"));
         contact2.sendKeys("Gany09");
-        WebElement Addbtn = driver.findElement(By.xpath("//*[@id=\"form1\"]/table/tbody/tr[5]/td[2]/input"));
+       WebElement Addbtn = driver.findElement(By.xpath("//*[@id=\"form1\"]/table/tbody/tr[5]/td[2]/input"));
         Addbtn.click();
 
 

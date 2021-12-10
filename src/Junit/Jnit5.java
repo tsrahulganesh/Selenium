@@ -1,3 +1,5 @@
+package Junit;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.AfterClass;
 import org.junit.Assert;
@@ -6,8 +8,13 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.TimeoutException;
 
-public class Junit4 {
+import java.time.Duration;
+import java.util.concurrent.TimeUnit;
+
+public class Jnit5 {
+
 
 
         static WebDriver driver;
@@ -29,15 +36,27 @@ public class Junit4 {
 
             driver.get("http://stock.scriptinglogic.net/");
             driver.findElement(By.id("login-username")).sendKeys("admin");
-            driver.findElement(By.id("login-password")).sendKeys("admin1");
+            driver.findElement(By.id("login-password")).sendKeys("admin");
             driver.findElement(By.name("submit")).click();
+            driver.manage().timeouts().implicitlyWait(20, TimeUnit.MILLISECONDS);
 
-            String expected = "http://stock.scriptinglogic.net/dashboard.php";// Expected to this program will fail
-            String actual = driver.getCurrentUrl();
+            //String expected = "http://stock.scriptinglogic.net/dashboard.php";// Expected to this program will fail
+            //String actual = driver.getCurrentUrl();
+
+            /*String expected = "POSNIC - Dashboard";
+            String actual = driver.getTitle();*/
+
+            String expected ="Log out" ;
+            String actual = driver.findElement(By.cssSelector(".round.button.dark.menu-logoff.image-left")).getText();
+
 
             Assert.assertEquals("This is not dashboard",expected,actual);
         }
     }
+/*org.junit.ComparisonFailure: This is not dashboard
+Expected :log - out
+Actual   :Log out*/
+
 
 
 

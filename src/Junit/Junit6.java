@@ -1,3 +1,5 @@
+package Junit;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.AfterClass;
 import org.junit.Assert;
@@ -6,12 +8,12 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.TimeoutException;
 
-import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
-public class Jnit5 {
+public class Junit6 {
+
+
 
 
 
@@ -45,15 +47,23 @@ public class Jnit5 {
             String actual = driver.getTitle();*/
 
             String expected ="Log out" ;
-            String actual = driver.findElement(By.cssSelector(".round.button.dark.menu-logoff.image-left")).getText();
-
-
+            //String actual = driver.findElement(By.cssSelector(".round.button.dark.menu-logoff.image-left")).getText();
+ String actual = null;
+ try {
+     actual = driver.findElement(By.cssSelector(".round.button.dark.menu-logoff.image-left")).getText();
+ }
+ catch (Exception e)
+ {
+     actual ="";
+ }
             Assert.assertEquals("This is not dashboard",expected,actual);
         }
     }
 /*org.junit.ComparisonFailure: This is not dashboard
 Expected :log - out
 Actual   :Log out*/
+
+
 
 
 
