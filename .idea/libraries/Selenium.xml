@@ -2,6 +2,8 @@
   <library name="Selenium">
     <CLASSES>
       <root url="file://$PROJECT_DIR$" />
+      <root url="jar://$PROJECT_DIR$/../../../../Selenium Installers/Selenium/Junit/hamcrest-core-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../Selenium Installers/Selenium/Junit/junit-4.13.2.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
