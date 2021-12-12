@@ -38,6 +38,7 @@ public class Junit8 {
         WebElement loginbtn = driver.findElement(By.xpath("//*[@id=\"login-form\"]/fieldset/input"));
         loginbtn.click();
 
+
         WebElement Addbtn = driver.findElement(By.xpath("//a[normalize-space()='Add Customer']"));
         Addbtn.click();
         WebElement Name =  driver.findElement(By.xpath("//*[@id=\"name\"]"));

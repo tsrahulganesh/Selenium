@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name = "Websites">
+    <test name = "Websites 1">
+        <classes>
+            <class name = "TSTNG.jobwebsites"/>
+        </classes>
+    </test>
+
+    <test name = "websites 2">
+       <classes>
+           <class name ="TSTNG.socialwebsites"/>
+       </classes>
+        </test>
+
+     <test name = "websites 3">
+         <classes>
+           <class name = "TSTNG.tutorialwebsites"/>
+        </classes>
+        </test>
+</suite>
+

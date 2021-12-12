@@ -10,7 +10,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Junit7 {
+public class Junit9 {
+
 
         static WebDriver driver;
 
@@ -21,10 +22,10 @@ public class Junit7 {
             driver.manage().window().maximize();
         }
 
-        /*@AfterClass //Method below this annotation will run after last test of the class
+        @AfterClass //Method below this annotation will run after last test of the class
         public static void closeBrowser() {
             driver.close();
-        }*/
+        }
 
         @Test
         public void myTest1() throws InterruptedException {
@@ -42,7 +43,7 @@ public class Junit7 {
             WebElement Addbtn = driver.findElement(By.xpath("//a[normalize-space()='Add Customer']"));
             Addbtn.click();
             //-----Add customer page-----//
-            String custName ="Gany22";
+            String custName ="Gany23";
             WebElement txtName =  driver.findElement(By.xpath("//*[@id=\"name\"]"));
             txtName.sendKeys(custName);
             WebElement contact1 =  driver.findElement(By.xpath("//*[@id=\"buyingrate\"]"));
@@ -55,7 +56,7 @@ public class Junit7 {
             Addbtn2.click();
 
 
-            String expected = "[ "+custName+" ] Customer Details Added";//[ gany21 ] Customer Details Added !
+            String expected = "Customer Details Added";
             String actual = null;
             try {
                 actual = driver.findElement(By.cssSelector("div[@class='confirmation-box round']")).getText();
@@ -63,20 +64,14 @@ public class Junit7 {
             catch (Exception e) {
                 actual = "";
             }
-            System.out.println("expected="+expected);
-            System.out.println("actual = +actual");
-
-            Assert.assertEquals("customer added successfully",expected,actual);
+            boolean result = actual.contains(expected);
+            Assert.assertTrue("incorrect/message absent",result);
         }
     }
 
-/*expected=Dublicat Entry. Please Verify
-actual = +actual
 
-org.junit.ComparisonFailure: Incorrect error message or error message absent
-Expected :Dublicat Entry. Please Verify
-Actual   :
-*/
+
+
 
 
 
