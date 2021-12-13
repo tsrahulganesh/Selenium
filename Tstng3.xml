@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name = "project two">
+    <parameter name="myurl" value="https://stock.scriptinglogic.net/"/>
+    <parameter name="username" value="admin"/>
+    <parameter name="password" value="admin"/>
+
+    <test name = "Module 1">
+        <classes>
+            <class name="TSTNG.TNG6"/>
+
+
+            <class name="TSTNG.TNG7"/>
+
+        </classes>
+    </test>
+
+
+    <test name = "Module 2">
+        <classes>
+            <class name="TSTNG.TNG8"/>
+
+
+        </classes>
+    </test>
+</suite>
