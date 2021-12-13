@@ -11,7 +11,7 @@ public class TNG7 {
         public void classTwoTest1(){
             System.out.println("Before my Test");
         }
-        @AfterTest
+        @AfterTest(groups ="email")
         public void classTwoTest2(){
             System.out.println("After my test 2");
         }
