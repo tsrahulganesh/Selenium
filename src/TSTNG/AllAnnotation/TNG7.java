@@ -1,4 +1,4 @@
-package TSTNG;
+package TSTNG.AllAnnotation;
 
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;

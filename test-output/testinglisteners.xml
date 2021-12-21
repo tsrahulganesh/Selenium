@@ -5,8 +5,7 @@
     </listeners>-->
 
     <listeners>
-        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+        <listener class-name="TSTNG.MyListeners"/>
     </listeners>
 
     <test name = "Websites 1">
@@ -16,15 +15,15 @@
     </test>
 
     <test name = "websites 2">
-       <classes>
-           <class name ="TSTNG.socialwebsites"/>
-       </classes>
-        </test>
-
-     <test name = "websites 3">
-         <classes>
-           <class name = "TSTNG.tutorialwebsites"/>
+        <classes>
+            <class name ="TSTNG.socialwebsites"/>
         </classes>
-        </test>
+    </test>
+
+    <test name = "websites 3">
+        <classes>
+            <class name = "TSTNG.tutorialwebsites"/>
+        </classes>
+    </test>
 </suite>
 

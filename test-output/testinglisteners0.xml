@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name = "project name">
+
+    <listeners>
+        <listener class-name="TSTNG.MyListeners"/>
+    </listeners>
+
+    <groups>
+        <run>
+            <exclude name="email"/>
+        </run>
+    </groups>
+
+    <test name = "Module 1">
+        <classes>
+            <class name="TSTNG.TNG6"/>
+            <methods>
+                <include name="classoneTest1"/>
+            </methods>
+
+            <class name="TSTNG.TNG7"/>
+
+        </classes>
+    </test>
+
+
+    <test name = "Module 2">
+        <classes>
+            <class name="TSTNG.TNG8"/>
+            <methods>
+                <exclude name="classThreeTest1"/>
+            </methods>
+
+        </classes>
+    </test>
+</suite>

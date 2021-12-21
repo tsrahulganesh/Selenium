@@ -6,10 +6,26 @@
       <root url="jar://$PROJECT_DIR$/../../../../Selenium Installers/Selenium/Junit/junit-4.13.2.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../../../Selenium Installers/Selenium/TestNG/jcommander-1.78.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../../../Selenium Installers/Selenium/TestNG/testng-7.4.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../Selenium Installers/Selenium/TestNG/extentreports-5.0.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../Selenium Installers/Selenium/TestNG/freemarker-2.3.30.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../Selenium Installers/Selenium/TestNG/gson-2.8.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../Selenium Installers/Selenium/TestNG/guice-5.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../Selenium Installers/Selenium/TestNG/lombok-1.18.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../Selenium Installers/Selenium/TestNG/reactive-streams-1.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../Selenium Installers/Selenium/TestNG/reportng-1.1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../Selenium Installers/Selenium/TestNG/rxjava-3.0.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../Selenium Installers/Selenium/TestNG/velocity-dep-1.4.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../Selenium Installers/Selenium/TestNG" />
+      <root url="file://$PROJECT_DIR$/Lib" />
+      <root url="jar://$PROJECT_DIR$/../../../../Selenium Installers/Selenium/Selenium-java-4.1/extentreports-5.0.9.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="file://$PROJECT_DIR$/src" />
+      <root url="file://$PROJECT_DIR$/Lib" />
     </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/../../../../Selenium Installers/Selenium/TestNG" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/Lib" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/Lib" recursive="false" type="SOURCES" />
   </library>
 </component>

@@ -1,0 +1,32 @@
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="All websites">
+    <!--<listeners>
+        <listeners>
+            <listener class-name="org.testng.reporters.EmailableReporter2" />
+
+
+            <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+            <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+        </listeners>
+    -->
+    <listeners>
+        <listener class-name="TSTNG.ExtLisScrenshot.ExtentListerner"/>
+    </listeners>
+
+    <test name="study sites">
+        <classes>
+            <class name="TSTNG.ExtLisScrenshot.jobwebsites"/>
+            <class name="TSTNG.ExtLisScrenshot.tutorialwebsites"/>
+
+        </classes>
+
+    </test>
+
+    <test name="Social sites">
+        <classes>
+            <class name="TSTNG.ExtLisScrenshot.socialwebsites"/>
+        </classes>
+    </test>
+
+</suite>
