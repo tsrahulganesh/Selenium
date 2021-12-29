@@ -17,7 +17,7 @@ public class OpenUrl {
                 WebDriver driver = new ChromeDriver();
                 driver.manage().window().maximize();
 
-                driver.get("https://10.20.50.61/erp/");
+                driver.get("https://stock.scriptinglogic.net/index.php");
             }
 
 }

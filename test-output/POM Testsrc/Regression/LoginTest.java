@@ -29,8 +29,8 @@ public class LoginTest  extends OpenUrl {
 
                 Login login = new Login(driver);
 
-                login.setTxtUsername("abansode");
-                login.setTxtPassword("erp");
+                login.setTxtUsername("admin");
+                login.setTxtPassword("admin");
                 login.clickLogin();
 
         }

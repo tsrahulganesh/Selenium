@@ -34,7 +34,7 @@ public class ForgotPassTest extends OpenUrl {
 
 
         ForgotPass Forgot = new ForgotPass (driver);
-        Forgot.setTxtUsername("abansode2");
+        Forgot.setFavorite("sholoy");
 
         Forgot.clickbutton();
     }

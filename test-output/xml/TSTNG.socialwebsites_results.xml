@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="websites 2"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="8.914">
+  <properties />
+  
+  
+            <testcase name="mytest3" time="2.611" classname="TSTNG.socialwebsites" />
+                <testcase name="mytest1" time="4.067" classname="TSTNG.socialwebsites" />
+                <testcase name="mytest2" time="2.236" classname="TSTNG.socialwebsites" />
+      
+</testsuite>

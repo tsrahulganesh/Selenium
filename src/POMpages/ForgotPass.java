@@ -8,10 +8,10 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ForgotPass {
 
-    public@FindBy(xpath = "//input[@id='email_id']")
-    WebElement txtemail;
+    public@FindBy(xpath = "//input[@id='name']")
+    WebElement Favorite;
 
-    public @FindBy(xpath = "//input[@name='sub']")
+    public @FindBy(xpath = "//input[@name='submit']")
     WebElement btnsubmit;
 
 
@@ -23,9 +23,9 @@ public class ForgotPass {
 
 
 
-    public void setTxtUsername (String username)
+    public void setFavorite (String favorite)
     {
-        txtemail.sendKeys(username);
+        Favorite.sendKeys(favorite);
     }
 
 
