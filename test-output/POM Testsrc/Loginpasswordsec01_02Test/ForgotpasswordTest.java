@@ -1,7 +1,6 @@
-package Regression;
+package Loginpasswordsec01_02Test;
 
-import POMpages.Forgotpasswordpage;
-import POMpages.Loginpage;
+import POMpages.Loginpasswordsec01_02page.Forgotpasswordpage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

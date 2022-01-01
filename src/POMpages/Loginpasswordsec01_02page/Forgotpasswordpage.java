@@ -1,4 +1,4 @@
-package POMpages;
+package POMpages.Loginpasswordsec01_02page;
 
 
 import org.openqa.selenium.WebDriver;

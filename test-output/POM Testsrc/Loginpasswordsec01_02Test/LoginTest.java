@@ -1,17 +1,11 @@
-package Regression;
+package Loginpasswordsec01_02Test;
 
-import POMpages.Login;
+import POMpages.Loginpasswordsec01_02page.Login;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
-import util.OpenUrl;
+import Utility.OpenUrl;
 
 import java.io.IOException;
-
-import static Utility.ConfigReader.*;
-import static util.OpenUrl.driver;
 
 
 public class LoginTest  extends OpenUrl {

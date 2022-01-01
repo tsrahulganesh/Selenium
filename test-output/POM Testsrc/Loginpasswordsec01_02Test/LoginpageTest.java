@@ -1,15 +1,12 @@
-package Regression;
+package Loginpasswordsec01_02Test;
 
-import POMpages.Login;
-import POMpages.Loginpage;
+import POMpages.Loginpasswordsec01_02page.Loginpage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
-
-import static Utility.ConfigReader.getUrl;
 
 
 public class LoginpageTest {

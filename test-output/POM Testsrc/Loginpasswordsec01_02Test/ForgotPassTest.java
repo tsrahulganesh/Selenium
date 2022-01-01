@@ -1,20 +1,13 @@
-package Regression;
+package Loginpasswordsec01_02Test;
 
-import POMpages.ForgotPass;
+import POMpages.Loginpasswordsec01_02page.ForgotPass;
 
-import POMpages.Login;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import POMpages.Loginpasswordsec01_02page.Login;
 import org.testng.annotations.Test;
-import util.OpenUrl;
+import Utility.OpenUrl;
 
 
 import java.io.IOException;
-
-import static Utility.ConfigReader.getPassword;
-import static Utility.ConfigReader.getUsername;
-import static util.OpenUrl.driver;
 
 public class ForgotPassTest extends OpenUrl {
 
