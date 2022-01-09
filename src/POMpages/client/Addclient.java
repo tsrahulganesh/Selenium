@@ -12,17 +12,12 @@ import java.sql.SQLException;
 import java.sql.Statement;
 public class Addclient {
 
-
-    /**
-     * Created by user on 2/12/2017.
-     */
-    public class AddClient {
-
-        WebDriver driver;
-
+WebDriver driver;
         @FindBy(xpath = ".//*[@id='client_name']")
         WebElement txtclientname;
 
+        @FindBy(xpath = ".//*[@id='client_surname']")
+        WebElement txtsurname;
 
         @FindBy(xpath = ".//*[@id='client_address_1']")
         WebElement txtstreetaddress;
@@ -74,15 +69,13 @@ public class Addclient {
         @FindBy(xpath=".//*[@id='btn-submit']")
         WebElement btnsave;
 
-        public    AddClient(WebDriver driver) {
-            this.driver = driver;
-
-            PageFactory.initElements(driver, this);
-
-        }
 
         public void setclientname(String clientname) {
             txtclientname.sendKeys(clientname);
+        }
+
+        public void setsurname(String surname) {
+            txtsurname.sendKeys(surname);
         }
 
         public void setstreetaddress1(String streetaddress) {
@@ -137,13 +130,9 @@ public class Addclient {
             txttaxcode.sendKeys(taxcode);
         }
 
-        public void setBtnsave() throws ClassNotFoundException, SQLException {
-            // btnsave.click();
+        public void setBtnsave() {
+            btnsave.click();
 
-            JavascriptExecutor executor = (JavascriptExecutor)driver;
-            executor.executeScript("arguments[0].click();", btnsave);
-
-
-        }
     }
+
 }

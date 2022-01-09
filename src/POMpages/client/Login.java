@@ -10,20 +10,20 @@ public class Login  {
 
         WebDriver driver;
 
-        @FindBy(xpath = ".//*[@id='email']")
+        @FindBy(xpath = "//input[@id='email']")
         WebElement txtEmail;
 
 
-        @FindBy(xpath = ".//*[@id='password']")
+        @FindBy(xpath = "//input[@id='password']")
         WebElement txtpassword;
 
 
-        @FindBy(xpath = ".//*[@id='login']/form/input")
+        @FindBy(xpath = "//button[normalize-space()='Login']")
         WebElement btnlogin;
 
 
-        @FindBy(xpath = ".//*[@id='login']/img")
-        WebElement image;
+        @FindBy(xpath = "//a[normalize-space()='I forgot my password']")
+        WebElement forgotlink;
 
 
         public Login(WebDriver driver) {
@@ -49,5 +49,6 @@ public class Login  {
         {
             btnlogin.click();
         }
+        public void  clickForgotPass() {forgotlink.click();}
     }
-}
+

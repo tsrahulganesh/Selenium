@@ -1,4 +1,4 @@
-package POMpages.Loginpasswordsec01_02page;
+package POMpages.Loginpasswordsec01_02page.Posnic1;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -22,23 +22,23 @@ public class Login {
     public @FindBy(xpath = "//input[@name='submit']")
     WebElement btnLogin;
 
-    public @FindBy(xpath = "//a[normalize-space()='Forgot your password?']")
+    /*public @FindBy(xpath = "//a[normalize-space()='Forgot your password?']")
     WebElement clicklink1;
 
 
 
     // @FindBy (xpath = "//a[normalize-space()='Forgot Password?']")
-    //WebElement lnkForgotPass;
+    //WebElement lnkForgotPass;*/
 
     public Login(WebDriver driver)
     {
-        PageFactory.initElements(driver,Login.class);
+        PageFactory.initElements(driver,this);
     }
 
-    public  void clickForgotPass()
+    /*public  void clickForgotPass()
     {
         clicklink1.click();
-    }
+    }*/
 
 
     public void setTxtUsername (String username)

@@ -6,20 +6,17 @@ import org.openqa.selenium.support.PageFactory;
 public class Forgotpass {
 
 
-        WebDriver driver;
-        @FindBy(xpath = ".//*[@id='login']/div[2]/small/a")
-        WebElement txtforgotpassword;
 
-    Forgotpass(WebDriver driver) {
-            this.driver = driver;
+        @FindBy(xpath = "//input[@id='email']")
+        WebElement txtemail;
 
-            PageFactory.initElements(driver, this);
+    public Forgotpass(WebDriver driver)
+    {PageFactory.initElements(driver, this);}
 
 
-        }
-        public void setforgotpassword(String forgotpassword)
+        public void setTxtemail (String forgotpassword)
         {
-            txtforgotpassword.sendKeys(forgotpassword);
+            txtemail.sendKeys(forgotpassword);
         }
     }
 

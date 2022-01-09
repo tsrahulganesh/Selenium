@@ -22,7 +22,7 @@ public class Openurl2 extends ConfigReader{
         @BeforeClass
         public void openBrowser() throws IOException {
             WebDriverManager.chromedriver().setup();
-            WebDriver driver = new ChromeDriver();
+            driver = new ChromeDriver();
             driver.manage().window().maximize();
 
             driver.get(getUrl());
@@ -30,4 +30,4 @@ public class Openurl2 extends ConfigReader{
 
     }
 
-}
+

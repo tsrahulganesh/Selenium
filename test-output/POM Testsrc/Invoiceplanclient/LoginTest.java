@@ -1,10 +1,9 @@
 package Invoiceplanclient;
 
-import POMpages.Loginpasswordsec01_02page.Login;
+import POMpages.client.Login;
 
 import Utility.Openurl2;
 import org.testng.annotations.Test;
-import Utility.OpenUrl;
 
 import java.io.IOException;
 
@@ -22,8 +21,8 @@ public class LoginTest  extends Openurl2 {
 
         Login login = new Login(driver);
 
-        login.setTxtUsername(getUsername());
-        login.setTxtPassword(getPassword());
+        login.setUsername(getUsername());
+        login.setPassword(getPassword());
         login.clickLogin();
 
     }

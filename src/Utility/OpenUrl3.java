@@ -7,8 +7,7 @@ import org.testng.annotations.BeforeClass;
 
 import java.io.IOException;
 
-import static Utility.ConfigReader.getUrl;
-public class OpenUrl {
+public class OpenUrl3 {
     public static WebDriver driver;
 
             @BeforeClass
@@ -17,7 +16,7 @@ public class OpenUrl {
                 driver = new ChromeDriver();
                 driver.manage().window().maximize();
 
-                driver.get("https://stock.scriptinglogic.net/index.php");
+                driver.get("http://[::1]/ip1/index.php/sessions/login\n");
             }
 
 }

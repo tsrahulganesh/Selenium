@@ -9,35 +9,33 @@ import java.io.IOException;
 
 public class ForgotpassTest extends Openurl2 {
 
-        @Test
-        public void ForgotPassTest1() throws IOException {
-
-       /*WebDriverManager.chromedriver().setup();
+    @Test
+    public void forgotPassTest() throws IOException {
+        /*WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
+        // driver.get("http://[::1]/ip-8am/index.php/sessions/login");
+        driver.get(getUrl());*/
 
-        driver.get("https://10.20.50.61/erp/");*/
+        Login login = new Login(driver);
+        login.clickForgotPass();
 
-            Login login = new Login(driver);
-            login.clickForgotPass();
+        Forgotpass forgotpass  =new Forgotpass(driver);
 
-
-
-
-            ForgotpassTest Forgot = new ForgotpassTest (driver);
-            Forgot.setFavorite("sholoy");
-
-            Forgot.clickbutton();
-        }
+        forgotpass.setTxtemail("amol@gmail.com");
+        //forgotpass.clickReset();
     }
 
-
-
-
-
-
-
-
-
-
 }
+
+
+
+
+
+
+
+
+
+
+
+

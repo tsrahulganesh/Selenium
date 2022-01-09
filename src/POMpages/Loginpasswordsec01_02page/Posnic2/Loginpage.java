@@ -1,4 +1,4 @@
-package POMpages.Loginpasswordsec01_02page;
+package POMpages.Loginpasswordsec01_02page.Posnic2;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -22,28 +22,28 @@ public class Loginpage {
     WebElement txtUser = driver.findElement(By.xpath("//input[@id='email']"));*/
 
 
-        @FindBy(xpath = "//input[@id='uname']")
+        @FindBy(xpath = "//input[@id='login-username']")
         public WebElement txtUsername;
 
-        public @FindBy(xpath = "//input[@id='pwd']")
+        public @FindBy(xpath = "//input[@id='login-password']")
         WebElement txtPassword;
 
-        public @FindBy(xpath = "//input[@id='loginbut']")
+        public @FindBy(xpath = "//input[@name='submit']")
         WebElement btnLogin;
 
 
-        // @FindBy (xpath = "//a[normalize-space()='Forgot Password?']")
-        //WebElement lnkForgotPass;
+        @FindBy (xpath = "//a[normalize-space()='Forgot your password?']")
+        WebElement lnkForgotPass;
 
         public Loginpage(WebDriver driver)
         {
             PageFactory.initElements(driver,this);
         }
 
-   /* public  void clickForgotPass()
+    public  void clickForgotPass()
     {
         lnkForgotPass.click();
-    }*/
+    }
 
         public void setTxtUsername (String username)
         {

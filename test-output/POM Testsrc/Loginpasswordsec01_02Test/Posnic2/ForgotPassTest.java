@@ -1,8 +1,8 @@
-package Loginpasswordsec01_02Test;
+package Loginpasswordsec01_02Test.Posnic2;
 
-import POMpages.Loginpasswordsec01_02page.ForgotPass;
+import POMpages.Loginpasswordsec01_02page.Posnic2.ForgotPass;
 
-import POMpages.Loginpasswordsec01_02page.Login;
+import POMpages.Loginpasswordsec01_02page.Posnic2.Loginpage;
 import org.testng.annotations.Test;
 import Utility.OpenUrl;
 
@@ -20,10 +20,8 @@ public class ForgotPassTest extends OpenUrl {
 
         driver.get("https://10.20.50.61/erp/");*/
 
-        Login login = new Login(driver);
+        Loginpage login = new Loginpage(driver);
         login.clickForgotPass();
-
-
 
 
         ForgotPass Forgot = new ForgotPass (driver);

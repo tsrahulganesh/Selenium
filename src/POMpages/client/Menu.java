@@ -5,9 +5,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 public class Menu {
 
-    /**
-     * Created by user on 2/19/2017.
-     */
 
         WebDriver driver;
 
@@ -76,15 +73,15 @@ public class Menu {
 
         public void viewclient() {btnclient.click();btnViewclient.click();}
 
-   /* public void CreateQuotes() {btncreateQuotes.click();}
+    public void CreateQuotes() {btncreateQuotes.click();}
     public void ViewQuotes () {btnviewQuotes.click();}
     public void viewQuotes () {btnviewQuotes.click();}
     public void Createinvoices () {btncreateinvoices.click();}
     public void viewinvoices () {btnviewinvoices.click();}
-    public void viewrecurringinvoices () {btnviewrecurringinvoices.click();}*/
+    public void viewrecurringinvoices () {btnviewrecurringinvoices.click();}
 
         public void clicksave() {btnsave.click();}
     }
 
 
-}
+

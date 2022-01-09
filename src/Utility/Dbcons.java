@@ -1,4 +1,4 @@
-package Utility;
+/*package Utility;
 import org.apache.log4j.Logger;
 
 import java.sql.*;
@@ -18,7 +18,7 @@ public class Dbcons {
 
         }
 
-	/*public ResultSet getRecords(String strSQL,Statement s) throws Exception
+	public ResultSet getRecords(String strSQL,Statement s) throws Exception
 	{
 		//System.out.println(strSQL);
 		try
@@ -32,7 +32,7 @@ public class Dbcons {
 			e.printStackTrace();
 			throw e;
 		}
-	}*/
+	}
 
 
         public ResultSet getRecords(String strSQL) throws Exception
@@ -123,4 +123,4 @@ public class Dbcons {
 
         }
     }
-}
+}*/

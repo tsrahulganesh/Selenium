@@ -1,6 +1,6 @@
-package Loginpasswordsec01_02Test;
+package Loginpasswordsec01_02Test.Posnic1;
 
-import POMpages.Loginpasswordsec01_02page.Forgotpasswordpage;
+import POMpages.Loginpasswordsec01_02page.Posnic1.Forgotpasswordpage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -17,11 +17,11 @@ public class ForgotpasswordTest {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
 
-        driver.get("https://10.20.50.61/erp/");
+        driver.get("https://stock.scriptinglogic.net/");
 
         Forgotpasswordpage Forgot = new Forgotpasswordpage(driver);
 
-        Forgot.setTxtUsername("abansode");
+        Forgot.setTxtUsername("admin");
         Forgot.setTxtPassword("werwe");
 
         Forgot.clicklink();

@@ -1,4 +1,4 @@
-package POMpages.Loginpasswordsec01_02page;
+package POMpages.Loginpasswordsec01_02page.Posnic2;
 
 
 import org.openqa.selenium.WebDriver;
@@ -14,21 +14,15 @@ public class ForgotPass {
     public @FindBy(xpath = "//input[@name='submit']")
     WebElement btnsubmit;
 
-
-
     public ForgotPass(WebDriver driver)
     {
         PageFactory.initElements(driver,this);
     }
 
-
-
     public void setFavorite (String favorite)
     {
         Favorite.sendKeys(favorite);
     }
-
-
 
     public void clickbutton() {
         btnsubmit.click();
