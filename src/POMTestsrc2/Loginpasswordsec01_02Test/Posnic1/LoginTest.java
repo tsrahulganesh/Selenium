@@ -1,9 +1,8 @@
-package Loginpasswordsec01_02Test.Posnic1;
+package POMTestsrc2.Loginpasswordsec01_02Test.Posnic1;
 
 import POMpages.Loginpasswordsec01_02page.Posnic1.Login;
-
-import org.testng.annotations.Test;
 import Utility.OpenUrl;
+import org.testng.annotations.Test;
 
 import java.io.IOException;
 

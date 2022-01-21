@@ -1,4 +1,4 @@
-package Loginpasswordsec01_02Test.Posnic2;
+package POMTestsrc2.Loginpasswordsec01_02Test.Posnic2;
 
 import POMpages.Loginpasswordsec01_02page.Posnic2.Loginpage;
 import Utility.OpenUrl;

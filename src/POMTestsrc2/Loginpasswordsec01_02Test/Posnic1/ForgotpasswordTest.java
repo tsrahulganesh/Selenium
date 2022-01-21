@@ -1,4 +1,4 @@
-package Loginpasswordsec01_02Test.Posnic1;
+package POMTestsrc2.Loginpasswordsec01_02Test.Posnic1;
 
 import POMpages.Loginpasswordsec01_02page.Posnic1.Forgotpasswordpage;
 import io.github.bonigarcia.wdm.WebDriverManager;

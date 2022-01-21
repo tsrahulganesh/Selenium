@@ -1,19 +1,17 @@
-package Invoiceplanclient;
+package POMTestsrc2.Invoiceplanclient;
 
+import POMmaster.src.pages.Login;
+import POMmaster.src.pages.Menu;
+import POMmaster.src.pages.addClient.AddClient;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import POMmaster.src.pages.Login;
-import POMmaster.src.pages.Menu;
-import POMmaster.src.pages.addClient.AddClient;
 
 import java.io.IOException;
 
-import static POMmaster.src.util.ConfigReader.getUrl;
-import static POMmaster.src.util.ConfigReader.getPassword;
-import static POMmaster.src.util.ConfigReader.getUsername;
+import static POMmaster.src.util.ConfigReader.*;
 
 public class AddclientTest {
     WebDriver driver;

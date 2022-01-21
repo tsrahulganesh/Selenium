@@ -1,22 +1,12 @@
-package Invoiceplanclient;
+package POMTestsrc2.Invoiceplanclient;
 
-import POMmaster.testsrc.util.DoLogin;
-import POMmaster.testsrc.util.OpenUrl;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
-import POMmaster.src.pages.Login;
 import POMmaster.src.pages.Menu;
 import POMmaster.src.pages.addClient.AddClient;
-import POMmaster.testsrc.util.DoLogin;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
 import java.io.IOException;
-import static POMmaster.src.util.ConfigReader.getUrl;
+
 import static POMmaster.src.util.MyDataProvider.getMyData;
 
 public class AddclientDataprovider extends DoLOGin {
@@ -75,7 +65,7 @@ public class AddclientDataprovider extends DoLOGin {
 
         @DataProvider
         public Object[][] getData() throws IOException {
-            return getMyData("src/POMmaster/Data/myData.xlsx","Sheet1");
+            return getMyData("Data/myData.xlsx","Sheet1");
         }
 
 

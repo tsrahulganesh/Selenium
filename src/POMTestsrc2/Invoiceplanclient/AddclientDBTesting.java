@@ -1,14 +1,10 @@
-package Invoiceplanclient;  ;
+package POMTestsrc2.Invoiceplanclient;
 
-import POMpages.client.Addclient;
-import POMpages.client.Login;
-import org.openqa.selenium.By;
+import POMmaster.src.pages.Menu;
+import POMmaster.src.pages.addClient.AddClient;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import POMmaster.src.pages.Menu;
-import POMmaster.src.pages.addClient.AddClient;
-import POMmaster.testsrc.util.DoLogin;
 
 import java.io.IOException;
 import java.sql.*;
@@ -17,6 +13,8 @@ import java.util.ArrayList;
 
 import static POMmaster.src.util.Conversion.*;
 import static POMmaster.src.util.MyDataProvider.getMyData;
+
+;
 
 public class AddclientDBTesting extends DoLOGin {
 

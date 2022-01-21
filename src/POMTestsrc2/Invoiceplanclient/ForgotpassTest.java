@@ -1,9 +1,10 @@
-package Invoiceplanclient;
+package POMTestsrc2.Invoiceplanclient;
+
 import POMpages.client.Forgotpass;
 import POMpages.client.Login;
-import Utility.OpenUrl;
 import Utility.Openurl2;
 import org.testng.annotations.Test;
+
 import java.io.IOException;
 
 

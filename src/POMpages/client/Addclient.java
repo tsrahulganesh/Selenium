@@ -10,9 +10,17 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
-public class Addclient {
 
-WebDriver driver;
+
+public class Addclient {
+    public  Addclient(WebDriver driver){
+
+        this.driver =driver;
+        PageFactory.initElements(driver,this);
+
+    }
+
+    WebDriver driver;
         @FindBy(xpath = ".//*[@id='client_name']")
         WebElement txtclientname;
 

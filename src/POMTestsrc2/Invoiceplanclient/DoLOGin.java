@@ -1,16 +1,10 @@
-package Invoiceplanclient;
+package POMTestsrc2.Invoiceplanclient;
 
 import POMpages.client.Login;
-import Utility.OpenUrl3;
 import Utility.Openurl2;
-import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 import org.testng.annotations.BeforeClass;
-import Utility.ConfigReader;
 
 import java.io.IOException;
-
-import static Utility.ConfigReader.getPassword;
-import static Utility.ConfigReader.getUsername;
 
 public class DoLOGin extends Openurl2 {
 

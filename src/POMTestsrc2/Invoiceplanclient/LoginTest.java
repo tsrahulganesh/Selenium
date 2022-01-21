@@ -1,7 +1,6 @@
-package Invoiceplanclient;
+package POMTestsrc2.Invoiceplanclient;
 
 import POMpages.client.Login;
-
 import Utility.Openurl2;
 import org.testng.annotations.Test;
 
